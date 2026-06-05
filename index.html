@@ -245,10 +245,10 @@
 
 <!-- Top Navigation Bar -->
 <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline/10 shadow-2xl">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between h-16 md:h-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between h-20 md:h-24">
     <!-- Logo -->
-    <a href="#" class="flex items-center group">
-        <img src="logo.png" alt="Royal AI Logo" class="h-10 md:h-12 w-auto object-contain" />
+    <a href="#" class="flex items-center group flex-shrink-0">
+        <img src="logo.png" alt="Royal AI Logo" class="h-14 md:h-16 w-auto object-contain" />
     </a>
     <div class="hidden md:flex items-center space-x-gutter">
         <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a>
@@ -261,27 +261,29 @@
         Contact Us &amp; Get Free Strategy
     </a>
     <!-- Mobile menu button -->
-    <button class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container-high/50 border border-outline/10" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-        <span class="material-symbols-outlined text-primary">menu</span>
+    <button class="md:hidden flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high/60 border border-primary/20" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <span class="material-symbols-outlined text-primary text-[26px]">menu</span>
     </button>
 </div>
 <!-- Mobile menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-background/95 backdrop-blur-xl border-t border-outline/10 px-margin-mobile py-4 space-y-3">
-    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-2" href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
-    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-2" href="#process" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Process</a>
-    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-2" href="#clients" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Clients</a>
-    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-2" href="#faq" onclick="document.getElementById('mobile-menu').classList.add('hidden')">FAQ</a>
-    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-2" href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
-    <a href="https://wa.me/+917547867719" target="_blank" class="block w-full mt-2 text-center bg-primary text-on-primary px-6 py-3 rounded-full font-label-caps text-label-caps font-bold neumorphic-button">
-        Contact Us &amp; Get Free Strategy
-    </a>
+<div id="mobile-menu" class="hidden md:hidden bg-background/95 backdrop-blur-xl border-t border-outline/10 px-margin-mobile py-5 space-y-1">
+    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-all py-3 px-4 rounded-xl" href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-all py-3 px-4 rounded-xl" href="#process" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Process</a>
+    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-all py-3 px-4 rounded-xl" href="#clients" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Clients</a>
+    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-all py-3 px-4 rounded-xl" href="#faq" onclick="document.getElementById('mobile-menu').classList.add('hidden')">FAQ</a>
+    <a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-all py-3 px-4 rounded-xl" href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+    <div class="pt-3 border-t border-outline/10 mt-2">
+        <a href="https://wa.me/+917547867719" target="_blank" class="block w-full text-center bg-primary text-on-primary px-6 py-4 rounded-full font-label-caps text-label-caps font-bold neumorphic-button">
+            Contact Us &amp; Get Free Strategy
+        </a>
+    </div>
 </div>
 </nav>
 
 <!-- ══════════════════════════════════════
      HERO SECTION  with Three.js 3D Element
      ══════════════════════════════════════ -->
-<section class="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden">
+<section class="relative min-h-screen flex items-center pt-20 md:pt-24 overflow-hidden">
 
     <!-- Ambient Glow Blobs -->
     <div class="hero-glow w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#f2ca50]/10 top-1/4 left-0"></div>
@@ -675,7 +677,7 @@
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
     <div class="col-span-1 md:col-span-1">
         <div class="flex items-center mb-6">
-            <img src="logo.png" alt="Royal AI Logo" class="h-12 w-auto object-contain" />
+            <img src="logo.png" alt="Royal AI Logo" class="h-16 w-auto object-contain" />
         </div>
         <p class="font-body-md text-on-surface-variant">The elite standard in sentient marketing and software engineering.</p>
     </div>
