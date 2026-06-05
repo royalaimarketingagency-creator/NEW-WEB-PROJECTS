@@ -382,54 +382,137 @@
         <h2 class="font-headline-xl text-headline-xl mb-4">Elite Digital Services</h2>
         <div class="h-1 w-24 bg-primary mx-auto"></div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden">
-            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <span class="material-symbols-outlined text-primary text-3xl">smart_toy</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter items-start">
+        <!-- AI Integrations -->
+        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden flex flex-col justify-between h-full">
+            <div>
+                <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                    <span class="material-symbols-outlined text-primary text-3xl">smart_toy</span>
+                </div>
+                <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">AI Integrations</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Custom sentient workflows and autonomous agents designed for complex enterprise scalability.</p>
+                
+                <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out" id="details-ai">
+                    <div class="pt-6 mt-6 border-t border-outline/10 text-on-surface-variant font-body-md text-sm leading-relaxed space-y-3">
+                        <p>We design and deploy bespoke AI agents that integrate seamlessly into your CRM, ERP, and marketing stacks. From autonomous support agents to predictive analytics and automated content pipelines, our systems eliminate human bottlenecks and scale operations 24/7.</p>
+                        <p>Leveraging private LLMs and Retrieval-Augmented Generation (RAG), we build secure, domain-specific models that safely process proprietary data to automate complex business logic.</p>
+                    </div>
+                </div>
             </div>
-            <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">AI Integrations</h4>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Custom sentient workflows and autonomous agents designed for complex enterprise scalability.</p>
-            <a class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all" href="#">LEARN MORE <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+            <button class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all mt-6 cursor-pointer self-start" onclick="toggleDetails('details-ai', this)">
+                <span>LEARN MORE</span>
+                <span class="material-symbols-outlined ml-2 transition-transform duration-300">arrow_forward</span>
+            </button>
         </div>
-        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden">
-            <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
-                <span class="material-symbols-outlined text-secondary text-3xl">code</span>
+
+        <!-- Software -->
+        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden flex flex-col justify-between h-full">
+            <div>
+                <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
+                    <span class="material-symbols-outlined text-secondary text-3xl">code</span>
+                </div>
+                <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">Software</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">High-performance custom platforms architected with cutting-edge tech stacks and military-grade security.</p>
+                
+                <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out" id="details-software">
+                    <div class="pt-6 mt-6 border-t border-outline/10 text-on-surface-variant font-body-md text-sm leading-relaxed space-y-3">
+                        <p>Our engineering team builds robust, highly scalable web applications, mobile platforms, and backend APIs custom-tailored to your proprietary business logic. We design for absolute reliability, sub-second latency, and horizontal scalability under heavy traffic spikes.</p>
+                        <p>We leverage modern tech stacks (like Next.js, Node.js, Go, and Python) deployed on secure cloud infrastructures (AWS/GCP), protected by airtight encryption protocols and advanced firewall shielding.</p>
+                    </div>
+                </div>
             </div>
-            <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">Software</h4>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">High-performance custom platforms architected with cutting-edge tech stacks and military-grade security.</p>
-            <a class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all" href="#">LEARN MORE <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+            <button class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all mt-6 cursor-pointer self-start" onclick="toggleDetails('details-software', this)">
+                <span>LEARN MORE</span>
+                <span class="material-symbols-outlined ml-2 transition-transform duration-300">arrow_forward</span>
+            </button>
         </div>
-        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden">
-            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <span class="material-symbols-outlined text-primary text-3xl">ads_click</span>
+
+        <!-- CPA -->
+        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden flex flex-col justify-between h-full">
+            <div>
+                <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                    <span class="material-symbols-outlined text-primary text-3xl">ads_click</span>
+                </div>
+                <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">CPA</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Performance-based acquisition models that guarantee measurable growth and minimized waste.</p>
+                
+                <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out" id="details-cpa">
+                    <div class="pt-6 mt-6 border-t border-outline/10 text-on-surface-variant font-body-md text-sm leading-relaxed space-y-3">
+                        <p>We completely align our success with yours by running performance-based customer acquisition campaigns. By absorbing the upfront media buying risk, we deliver qualified leads and paying customers at a locked-in, pre-agreed Cost-Per-Acquisition.</p>
+                        <p>Using advanced multi-touch attribution modeling, custom data telemetry, and AI-driven bidding algorithms, we continuously optimize campaigns in real-time across channels to secure high-intent conversions and maximize your margins.</p>
+                    </div>
+                </div>
             </div>
-            <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">CPA</h4>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Performance-based acquisition models that guarantee measurable growth and minimized waste.</p>
-            <a class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all" href="#">LEARN MORE <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+            <button class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all mt-6 cursor-pointer self-start" onclick="toggleDetails('details-cpa', this)">
+                <span>LEARN MORE</span>
+                <span class="material-symbols-outlined ml-2 transition-transform duration-300">arrow_forward</span>
+            </button>
         </div>
-        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden">
-            <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
-                <span class="material-symbols-outlined text-secondary text-3xl">search</span>
+
+        <!-- SEO -->
+        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden flex flex-col justify-between h-full">
+            <div>
+                <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
+                    <span class="material-symbols-outlined text-secondary text-3xl">search</span>
+                </div>
+                <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">SEO</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Algorithm-shattering visibility strategies powered by deep data mining and intent analysis.</p>
+                
+                <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out" id="details-seo">
+                    <div class="pt-6 mt-6 border-t border-outline/10 text-on-surface-variant font-body-md text-sm leading-relaxed space-y-3">
+                        <p>Go beyond superficial keyword density. We conduct comprehensive search landscape audits, topical authority mapping, and reverse-engineer competitor algorithms to capture premium transactional search intent.</p>
+                        <p>Our approach combines technical SEO optimization (rendering speed, schema graph injection, Core Web Vitals refinement) with content structures designed to rank high and convert readers into buyers, driving compounding organic growth.</p>
+                    </div>
+                </div>
             </div>
-            <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">SEO</h4>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Algorithm-shattering visibility strategies powered by deep data mining and intent analysis.</p>
-            <a class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all" href="#">LEARN MORE <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+            <button class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all mt-6 cursor-pointer self-start" onclick="toggleDetails('details-seo', this)">
+                <span>LEARN MORE</span>
+                <span class="material-symbols-outlined ml-2 transition-transform duration-300">arrow_forward</span>
+            </button>
         </div>
-        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden">
-            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <span class="material-symbols-outlined text-primary text-3xl">share</span>
+
+        <!-- SMM -->
+        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden flex flex-col justify-between h-full">
+            <div>
+                <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                    <span class="material-symbols-outlined text-primary text-3xl">share</span>
+                </div>
+                <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">SMM</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Strategic dominance across social ecosystems using AI-driven audience psychographics.</p>
+                
+                <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out" id="details-smm">
+                    <div class="pt-6 mt-6 border-t border-outline/10 text-on-surface-variant font-body-md text-sm leading-relaxed space-y-3">
+                        <p>We build brand authority and hyper-targeted advertising setups across Facebook, Instagram, TikTok, LinkedIn, and YouTube. Our campaigns are built on deep psychographic research and behavioral segmentation to speak directly to your ideal buyer persona.</p>
+                        <p>By combining thumb-stopping creative design with automated split-testing on hundreds of visual/copy variations, we ensure your ad budget is directed exclusively to the highest-performing audience cohorts.</p>
+                    </div>
+                </div>
             </div>
-            <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">SMM</h4>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Strategic dominance across social ecosystems using AI-driven audience psychographics.</p>
-            <a class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all" href="#">LEARN MORE <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+            <button class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all mt-6 cursor-pointer self-start" onclick="toggleDetails('details-smm', this)">
+                <span>LEARN MORE</span>
+                <span class="material-symbols-outlined ml-2 transition-transform duration-300">arrow_forward</span>
+            </button>
         </div>
-        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden">
-            <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
-                <span class="material-symbols-outlined text-secondary text-3xl">video_camera_back</span>
+
+        <!-- UGC -->
+        <div class="glass-card p-8 rounded-3xl shimmer relative group overflow-hidden flex flex-col justify-between h-full">
+            <div>
+                <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
+                    <span class="material-symbols-outlined text-secondary text-3xl">video_camera_back</span>
+                </div>
+                <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">UGC</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Authentic, viral-ready content pipelines that bypass consumer ad-blindness with surgical precision.</p>
+                
+                <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out" id="details-ugc">
+                    <div class="pt-6 mt-6 border-t border-outline/10 text-on-surface-variant font-body-md text-sm leading-relaxed space-y-3">
+                        <p>We maintain an elite in-house creator network to generate highly engaging, authentic User-Generated Content (UGC). These are styled to look like organic social posts, bypassing traditional consumer banner blindness and building immediate trust.</p>
+                        <p>From creative scripting and creator pairing to professional post-production and performance hook testing, we supply a continuous stream of high-converting visual assets optimized for social algorithms.</p>
+                    </div>
+                </div>
             </div>
-            <h4 class="font-headline-lg text-headline-lg text-[24px] mb-4">UGC</h4>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Authentic, viral-ready content pipelines that bypass consumer ad-blindness with surgical precision.</p>
-            <a class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all" href="#">LEARN MORE <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+            <button class="inline-flex items-center text-primary font-label-caps text-label-caps hover:gap-2 transition-all mt-6 cursor-pointer self-start" onclick="toggleDetails('details-ugc', this)">
+                <span>LEARN MORE</span>
+                <span class="material-symbols-outlined ml-2 transition-transform duration-300">arrow_forward</span>
+            </button>
         </div>
     </div>
 </div>
@@ -493,7 +576,7 @@
 </section>
 
 <!-- Contact Section -->
-<section class="py-margin-desktop relative" id="contact">
+<section class="py-margin-desktop relative overflow-hidden" id="contact">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
     <div class="glass-card p-12 rounded-[2rem] border-primary/10">
         <h2 class="font-headline-lg text-headline-lg mb-8">Architect Your Future</h2>
@@ -599,7 +682,7 @@
 </section>
 
 <!-- FAQ Section -->
-<section class="py-margin-desktop relative bg-background border-t border-outline/5" id="faq">
+<section class="py-margin-desktop relative bg-background border-t border-outline/5 overflow-hidden" id="faq">
     <!-- Ambient glow inside section -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -969,6 +1052,35 @@
     }
     animate();
 })();
+
+// ── Services Detail Expand Accordion ───────────────────────────
+function toggleDetails(id, btn) {
+    const el = document.getElementById(id);
+    const isExpanded = el.style.maxHeight && el.style.maxHeight !== '0px';
+    const textSpan = btn.querySelector('span:first-child');
+    const iconSpan = btn.querySelector('.material-symbols-outlined');
+
+    if (isExpanded) {
+        el.style.maxHeight = el.scrollHeight + 'px';
+        el.offsetHeight; // force reflow
+        el.style.maxHeight = '0px';
+        el.style.opacity = '0';
+        textSpan.textContent = 'LEARN MORE';
+        if (iconSpan) iconSpan.style.transform = 'rotate(0deg)';
+    } else {
+        el.style.maxHeight = el.scrollHeight + 'px';
+        el.style.opacity = '1';
+        textSpan.textContent = 'SHOW LESS';
+        if (iconSpan) iconSpan.style.transform = 'rotate(90deg)';
+        
+        el.addEventListener('transitionend', function handler(e) {
+            if (e.propertyName === 'max-height' && el.style.maxHeight !== '0px') {
+                el.style.maxHeight = 'none';
+            }
+            el.removeEventListener('transitionend', handler);
+        });
+    }
+}
 
 // ── Glass card micro-interactions ─────────────────────────────
 document.querySelectorAll('.glass-card').forEach(card => {
