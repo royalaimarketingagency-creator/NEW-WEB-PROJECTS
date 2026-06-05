@@ -247,9 +247,8 @@
 <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline/10 shadow-2xl">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between h-16 md:h-20">
     <!-- Logo -->
-    <a href="#" class="flex items-center gap-3 group">
-        <img src="logo.png" alt="Royal AI Logo" class="w-9 h-9 md:w-10 md:h-10 rounded-lg object-contain" />
-        <span class="font-headline-lg text-[20px] md:text-headline-lg font-bold tracking-tighter" style="color:#ffe088;">ROYAL AI</span>
+    <a href="#" class="flex items-center group">
+        <img src="logo.png" alt="Royal AI Logo" class="h-10 md:h-12 w-auto object-contain" />
     </a>
     <div class="hidden md:flex items-center space-x-gutter">
         <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a>
@@ -356,7 +355,7 @@
 
 <!-- Stats Section -->
 <section class="py-20 bg-surface-container-lowest">
-<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
         <div class="glass-card p-10 rounded-2xl text-center group">
             <h3 class="font-display-lg text-display-lg-mobile text-primary mb-2 group-hover:scale-110 transition-transform">500+</h3>
@@ -376,7 +375,7 @@
 
 <!-- Services Section -->
 <section class="py-margin-desktop relative overflow-hidden" id="services">
-<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
     <div class="mb-20 text-center">
         <h2 class="font-headline-xl text-headline-xl mb-4">Elite Digital Services</h2>
         <div class="h-1 w-24 bg-primary mx-auto"></div>
@@ -436,7 +435,7 @@
 
 <!-- Process Timeline Section -->
 <section class="py-margin-desktop bg-surface-container-low overflow-hidden" id="process">
-<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
     <div class="mb-20 text-center">
         <h2 class="font-headline-xl text-headline-xl mb-4">Strategic Execution Path</h2>
         <p class="font-body-lg text-on-surface-variant">Our proven methodology for market domination</p>
@@ -493,7 +492,7 @@
 
 <!-- Contact Section -->
 <section class="py-margin-desktop relative" id="contact">
-<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
     <div class="glass-card p-12 rounded-[2rem] border-primary/10">
         <h2 class="font-headline-lg text-headline-lg mb-8">Architect Your Future</h2>
         <form class="space-y-6">
@@ -525,17 +524,17 @@
             </button>
         </form>
     </div>
-    <div class="relative h-[600px] flex items-center justify-center overflow-hidden">
+    <div class="relative h-[320px] md:h-[600px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-primary/5 rounded-full blur-[100px]"></div>
-        <div class="relative w-96 h-96 border-2 border-primary/20 rounded-full animate-[spin_20s_linear_infinite] flex items-center justify-center">
+        <div class="relative w-64 h-64 md:w-96 md:h-96 border-2 border-primary/20 rounded-full animate-[spin_20s_linear_infinite] flex items-center justify-center">
             <div class="absolute w-full h-[1px] bg-primary/20"></div>
             <div class="absolute h-full w-[1px] bg-primary/20"></div>
-            <div class="w-64 h-64 border border-secondary/30 rounded-full flex items-center justify-center animate-[spin_10s_linear_infinite_reverse]">
-                <span class="material-symbols-outlined text-secondary text-5xl animate-pulse">public</span>
+            <div class="w-44 h-44 md:w-64 md:h-64 border border-secondary/30 rounded-full flex items-center justify-center animate-[spin_10s_linear_infinite_reverse]">
+                <span class="material-symbols-outlined text-secondary text-4xl md:text-5xl animate-pulse">public</span>
             </div>
         </div>
-        <div class="absolute top-20 right-20 w-2 h-2 bg-primary rounded-full animate-ping"></div>
-        <div class="absolute bottom-40 left-10 w-2 h-2 bg-secondary rounded-full animate-ping delay-500"></div>
+        <div class="absolute top-10 md:top-20 right-10 md:right-20 w-2 h-2 bg-primary rounded-full animate-ping"></div>
+        <div class="absolute bottom-20 md:bottom-40 left-5 md:left-10 w-2 h-2 bg-secondary rounded-full animate-ping delay-500"></div>
         <div class="absolute top-1/2 left-1/4 w-1 h-1 bg-white rounded-full animate-pulse"></div>
     </div>
 </div>
@@ -673,11 +672,10 @@
 
 <!-- Footer -->
 <footer class="w-full py-20 bg-surface-container-lowest border-t border-outline/5">
-<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
     <div class="col-span-1 md:col-span-1">
-        <div class="flex items-center gap-3 mb-6">
-            <img src="logo.png" alt="Royal AI Logo" class="w-8 h-8 rounded-lg object-contain" />
-            <span class="font-headline-lg text-headline-lg text-primary" style="color:#ffe088;">ROYAL AI</span>
+        <div class="flex items-center mb-6">
+            <img src="logo.png" alt="Royal AI Logo" class="h-12 w-auto object-contain" />
         </div>
         <p class="font-body-md text-on-surface-variant">The elite standard in sentient marketing and software engineering.</p>
     </div>
@@ -705,7 +703,7 @@
         </ul>
     </div>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-outline/5 text-center">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-outline/5 text-center">
     <p class="font-label-caps text-label-caps text-on-surface-variant opacity-50">© 2024 ROYAL AI MARKETING. ARCHITECTING THE FUTURE.</p>
 </div>
 </footer>
